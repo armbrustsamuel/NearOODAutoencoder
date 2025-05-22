@@ -2,6 +2,8 @@
 
 In the `Autoencoders to detect manifestation shift in medical images` research, we implemented a simple autoencoder architecture, with latent space containing a `6 times` image reduction of original medical images.
 
+![](./architecture/autoencoder.png)
+
 The key component of this research if available at [autoencoder.py](./architecture/autoencoder.py) file.
 
 Key elements of this architecture:
@@ -10,6 +12,9 @@ Key elements of this architecture:
   - Batch Normalization (BN) in deeper layers
 - Perceptual loss (as loss function)
 - Adam optimizer
+- Use of loss as a metric for in-distribution (ID) or out-of-distribution (OOD) samples
+
+![](./architecture/proposed-pipeline.png)
 
 Datasets:
 
