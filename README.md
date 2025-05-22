@@ -1,6 +1,17 @@
 # NearOODAutoencoder
 
-Autoencoders to detect manifestation shift in medical images
+In the `Autoencoders to detect manifestation shift in medical images` research, we implemented a simple autoencoder architecture, with latent space containing a `6 times` image reduction of original medical images.
+
+The key component of this research if available at [autoencoder.py](./architecture/autoencoder.py) file.
+
+Key elements of this architecture:
+- Style transfer concepts
+  - Instance Normalization (IN) in shallow layers
+  - Batch Normalization (BN) in deeper layers
+- Perceptual loss (as loss function)
+- Adam optimizer
+
+Datasets:
 
 [...]
 
